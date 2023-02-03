@@ -13,7 +13,7 @@ const deleteTask = (id) => {
   const tasks=JSON.parse(localStorage.getItem("tasks"));
   const index=tasks.findIndex((task)=>task.id===id);
   tasks.splice(index,1);//saco la tarea eliminada del arreglo
-  list.innerHTML="";
+  li.innerHTML="";
   localStorage.setItem("tasks",JSON.stringify(tasks));
   displayTasks();
   // const parent=e.target.parentElement;//tomar el target el cual es el icono y muestra su elemento padre el cual es el li

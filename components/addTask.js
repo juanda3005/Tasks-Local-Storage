@@ -62,7 +62,6 @@ export const createTask = ({ value, dateFormat, complete, id }) => {
   const check = checkComplete(id);
   //Cargar el icono de completado en la tarea segun el localstorage
   if (complete) {
-    check.log("Tarea completada");
     check.classList.toggle("fas");
     check.classList.toggle("completeIcon"); //le agrega el color azul al icono
     check.classList.toggle("far");
